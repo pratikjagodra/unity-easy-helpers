@@ -1,0 +1,17 @@
+{
+    "name": "EasyHelpers.Runtime.Tools.ScreenService",
+    "rootNamespace": "EasyHelpers.Runtime.Tools.ScreenService",
+    "references": [
+        "GUID:b805c69ccb6181a44968fd0ee269eb78",
+        "GUID:e9b578b9f05b3b944b89e432c0c99ef6"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
