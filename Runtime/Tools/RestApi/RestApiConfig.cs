@@ -8,7 +8,7 @@ namespace EasyHelpers.Runtime.Tools.RestApi
     {
         [SerializeField] private string baseUrl;
 
-        internal string BaseUrl => baseUrl;
+        public string BaseUrl => baseUrl;
 
         protected override string GetAssetPath()
         {

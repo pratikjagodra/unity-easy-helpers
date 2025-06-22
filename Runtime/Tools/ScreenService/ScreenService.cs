@@ -39,7 +39,7 @@ namespace EasyHelpers.Runtime.Tools.ScreenService
             return null;
         }
 
-        internal T ShowScreen<T>() where T : UIScreen
+        public T ShowScreen<T>() where T : UIScreen
         {
             T screen = FindScreen<T>();
             screen.OnShowScreen();
@@ -65,7 +65,7 @@ namespace EasyHelpers.Runtime.Tools.ScreenService
             return screen;
         }
 
-        internal T HideScreen<T>() where T : UIScreen
+        public T HideScreen<T>() where T : UIScreen
         {
             T screen = FindScreen<T>();
             screen.OnHideScreen();
@@ -82,12 +82,12 @@ namespace EasyHelpers.Runtime.Tools.ScreenService
             return screen;
         }
 
-        internal T GetScreen<T>() where T : UIScreen
+        public T GetScreen<T>() where T : UIScreen
         {
             return FindScreen<T>();
         }
 
-        internal bool IsActiveScreen(UIScreen screen)
+        public bool IsActiveScreen(UIScreen screen)
         {
             if (activeScreen == null) return false;
 

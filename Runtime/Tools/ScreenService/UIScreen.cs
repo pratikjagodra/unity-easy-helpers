@@ -7,14 +7,14 @@ namespace EasyHelpers.Runtime.Tools.ScreenService
         [SerializeField] protected GameObject root;
         [SerializeField] protected bool isStackable = true;
 
-        internal bool IsStackable => isStackable;
+        public bool IsStackable => isStackable;
 
-        internal virtual void OnShowScreen()
+        public virtual void OnShowScreen()
         {
             root.SetActive(true);
         }
 
-        internal virtual void OnHideScreen()
+        public virtual void OnHideScreen()
         {
             root.SetActive(false);
         }

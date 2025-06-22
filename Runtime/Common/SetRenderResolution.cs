@@ -4,7 +4,7 @@ namespace EasyHelpers.Runtime.Common
 {
     public static class SetRenderResolution
     {
-        private static void Set(int resolution)
+        public static void Set(int resolution)
         {
             int height = Screen.currentResolution.height;
             int width = Screen.currentResolution.width;

@@ -19,7 +19,7 @@ namespace EasyHelpers.Runtime.Tools.RestApi
             return formFields;
         }
         
-        internal void GetRequest(string methodName, Dictionary<string, object> parameters, Action<string> onSuccess, Action<string> onFail)
+        public void GetRequest(string methodName, Dictionary<string, object> parameters, Action<string> onSuccess, Action<string> onFail)
         {
             StartCoroutine(GetRequestCoroutine(methodName, parameters, onSuccess, onFail));
         }
@@ -57,7 +57,7 @@ namespace EasyHelpers.Runtime.Tools.RestApi
             }
         }
 
-        internal void PostRequest(string methodName, Dictionary<string, object> parameters, Action<string> onSuccess, Action<string> onFail)
+        public void PostRequest(string methodName, Dictionary<string, object> parameters, Action<string> onSuccess, Action<string> onFail)
         {
             StartCoroutine(PostRequestCoroutine(methodName, parameters, onSuccess,onFail));
         }
@@ -90,7 +90,7 @@ namespace EasyHelpers.Runtime.Tools.RestApi
             }
         }
 
-        internal void GetTexture(string url, Action<Texture> onSuccess, Action<string> onFail)
+        public void GetTexture(string url, Action<Texture> onSuccess, Action<string> onFail)
         {
             StartCoroutine(GetTextureCoroutine(url, onSuccess, onFail));
         }
