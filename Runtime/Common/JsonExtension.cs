@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 
 namespace EasyHelpers.Runtime.Common
 {
-    public static class JsonExtention
+    public static class JsonExtension
     {
         public static string ToJson<T>(this T Object)
         {

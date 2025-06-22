@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace EasyHelpers.Runtime.Common
 {
+    public abstract class Singleton<T> where T : class, new()
+    {
+        private static Lazy<T> instance = new(() => new T());
+        public static T Instance { get { return instance.Value; } }
+    }
+
     public abstract class SingletonMonoBehaviour<T> : MonoBehaviour where T : MonoBehaviour
     {
         private static T instance;
@@ -73,12 +79,6 @@ namespace EasyHelpers.Runtime.Common
                 return instance;
             }
         }
-    }
-
-    public abstract class Singleton<T> where T : class, new()
-    {
-        private static Lazy<T> instance = new(() => new T());
-        public static T Instance { get { return instance.Value; } }
     }
 
     public abstract class SingletonScriptableObject<T>: ScriptableObject where T : SingletonScriptableObject<T>

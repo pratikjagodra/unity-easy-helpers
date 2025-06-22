@@ -2,7 +2,7 @@ using UnityEngine.Networking;
 
 namespace EasyHelpers.Runtime.Tools.RestApi
 {
-    public static class ApiExtentions
+    public static class ApiExtensions
     {
         public static bool HasError(this UnityWebRequest request)
         {
