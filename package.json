@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "Easy Helpers",
     "description": "A custom Unity package with useful tools.",
-    "unity": "2020.3",
+    "unity": "2022.3",
     "author": {
         "name": "Pratik Jagodra"
     },
