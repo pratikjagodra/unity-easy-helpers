@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace EasyHelpers.Runtime.Tools.RestApi
 {
-    internal abstract class RestApiHandler
+    public abstract class RestApiHandler
     {
         protected Dictionary<string, object> parameters = new Dictionary<string, object>();
         protected string methodName;
