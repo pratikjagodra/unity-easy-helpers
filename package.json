@@ -1,6 +1,6 @@
 {
     "name": "com.pj.easyhelpers",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "displayName": "Easy Helpers",
     "description": "A custom Unity package with useful tools.",
     "unity": "2022.3",
